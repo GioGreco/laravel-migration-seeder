@@ -1,1 +1,62 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+
+body{
+    background-color: palegoldenrod;
+    header{
+        // padding: 30px;
+        img{
+            transform: scale(.5);
+            width: 200px;
+            &.smoke{
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+
+    main{
+        .train-card{
+            .card-inner{
+                background-color: rgb(202, 180, 151);
+                border-bottom-right-radius: 35px;
+                border-top-left-radius: 35px;
+                overflow-y: hidden;
+
+                > span{
+                    font-size: .8rem;
+                    &.company{
+                        position: absolute;
+                        right: 0px;
+                        top: 0px;
+                        padding: 5px;
+                    }
+                }
+
+                .status{
+                    .green{
+                        color: palegreen;
+                    }
+                    .red{
+                        color: palevioletred;
+                    }
+                    .yellow{
+                        color: gold;
+                    }
+                }
+
+                .divider{
+                    height: 2px;
+                    background-color: black;
+                    margin: 6px 0;
+                }
+
+                .more-info{
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}
